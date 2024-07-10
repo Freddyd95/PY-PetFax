@@ -12,7 +12,6 @@ def create_app():
 
     from . import models
     models.db.init_app(app)
-
     migrate = Migrate(app, models.db)
 
     # index route
